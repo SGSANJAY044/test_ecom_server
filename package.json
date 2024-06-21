@@ -1,0 +1,25 @@
+{
+  "name": "test_ecom_server",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SGSANJAY044/test_ecom_server.git"
+  },
+  "author": "SANJAY S",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SGSANJAY044/test_ecom_server/issues"
+  },
+  "homepage": "https://github.com/SGSANJAY044/test_ecom_server#readme",
+  "dependencies": {
+    "@hapi/hapi": "^21.3.10",
+    "hapi-postgres-connection": "^7.0.0",
+    "pg": "^8.12.0",
+    "pg-promise": "^11.8.0"
+  }
+}
