@@ -1,5 +1,19 @@
 const reviewServices = (server, db) => {
     server.route({
+        method: 'GET',
+        path: '/reviews',
+        handler: async (request, h) => {
+            try {
+                console.log("db");
+                const reviews = await db.any('SELECT * FROM reviews');
+                return reviews;
+            } catch (err) {
+                console.error('Error fetching reviews:', err);
+                return Boom.badRequest('Failed to fetch reviews');
+            }
+        }
+    });
+    server.route({
         method: 'POST',
         path: '/reviews',
         handler: async (request, h) => {
