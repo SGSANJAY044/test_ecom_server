@@ -1,0 +1,268 @@
+[
+  {
+    "id": 1,
+    "productId": 1,
+    "review": "Great backpack for everyday use. The laptop sleeve is very useful.",
+    "rating": 4.5,
+    "customer": "John Doe"
+  },
+  {
+    "id": 2,
+    "productId": 1,
+    "review": "Good quality but a bit expensive.",
+    "rating": 3.0,
+    "customer": "Jane Smith"
+  },
+  {
+    "id": 3,
+    "productId": 2,
+    "review": "The fit is perfect and the material is comfortable.",
+    "rating": 4.0,
+    "customer": "Alice Johnson"
+  },
+  {
+    "id": 4,
+    "productId": 2,
+    "review": "Didn't like the style, not as expected.",
+    "rating": 2.0,
+    "customer": "Bob Brown"
+  },
+  {
+    "id": 5,
+    "productId": 3,
+    "review": "Excellent jacket for the price. Very warm.",
+    "rating": 5.0,
+    "customer": "Charlie Davis"
+  },
+  {
+    "id": 6,
+    "productId": 3,
+    "review": "Nice jacket but the zipper is a bit flimsy.",
+    "rating": 4.0,
+    "customer": "Diana Evans"
+  },
+  {
+    "id": 7,
+    "productId": 4,
+    "review": "The color is not as shown in the picture.",
+    "rating": 2.0,
+    "customer": "Eve Franklin"
+  },
+  {
+    "id": 8,
+    "productId": 5,
+    "review": "Beautiful bracelet, well worth the price.",
+    "rating": 5.0,
+    "customer": "Frank Green"
+  },
+  {
+    "id": 9,
+    "productId": 5,
+    "review": "Looks good but feels a bit heavy.",
+    "rating": 3.5,
+    "customer": "Grace Harris"
+  },
+  {
+    "id": 10,
+    "productId": 6,
+    "review": "Lovely ring, great for special occasions.",
+    "rating": 4.5,
+    "customer": "Hannah Irving"
+  },
+  {
+    "id": 11,
+    "productId": 6,
+    "review": "Pretty but smaller than expected.",
+    "rating": 3.0,
+    "customer": "Ian Jenkins"
+  },
+  {
+    "id": 12,
+    "productId": 7,
+    "review": "Nice design but not very durable.",
+    "rating": 2.5,
+    "customer": "Jake Kelly"
+  },
+  {
+    "id": 13,
+    "productId": 8,
+    "review": "Stylish and good quality earrings.",
+    "rating": 4.0,
+    "customer": "Karen Lee"
+  },
+  {
+    "id": 14,
+    "productId": 8,
+    "review": "Good for daily wear, happy with the purchase.",
+    "rating": 3.5,
+    "customer": "Leo Miller"
+  },
+  {
+    "id": 15,
+    "productId": 9,
+    "review": "Fast and reliable, highly recommend.",
+    "rating": 5.0,
+    "customer": "Mia Nelson"
+  },
+  {
+    "id": 16,
+    "productId": 9,
+    "review": "Good performance but a bit noisy.",
+    "rating": 4.0,
+    "customer": "Nick Owens"
+  },
+  {
+    "id": 17,
+    "productId": 10,
+    "review": "Incredible speed and easy to install.",
+    "rating": 5.0,
+    "customer": "Olivia Parker"
+  },
+  {
+    "id": 18,
+    "productId": 10,
+    "review": "Good value for money, works as expected.",
+    "rating": 4.5,
+    "customer": "Paul Quinn"
+  },
+  {
+    "id": 19,
+    "productId": 11,
+    "review": "Very fast, boosted my laptop's performance.",
+    "rating": 4.5,
+    "customer": "Quinn Roberts"
+  },
+  {
+    "id": 20,
+    "productId": 11,
+    "review": "Decent SSD but could be cheaper.",
+    "rating": 3.5,
+    "customer": "Rachel Scott"
+  },
+  {
+    "id": 21,
+    "productId": 12,
+    "review": "Great for PS4, lots of storage space.",
+    "rating": 4.5,
+    "customer": "Sam Taylor"
+  },
+  {
+    "id": 22,
+    "productId": 12,
+    "review": "Works well but a bit pricey.",
+    "rating": 3.0,
+    "customer": "Tina Underwood"
+  },
+  {
+    "id": 23,
+    "productId": 13,
+    "review": "Excellent display, very clear and sharp.",
+    "rating": 5.0,
+    "customer": "Uma Vincent"
+  },
+  {
+    "id": 24,
+    "productId": 13,
+    "review": "Good monitor but no VESA mount.",
+    "rating": 3.0,
+    "customer": "Victor White"
+  },
+  {
+    "id": 25,
+    "productId": 14,
+    "review": "Amazing for gaming, very immersive.",
+    "rating": 4.5,
+    "customer": "Wendy Xander"
+  },
+  {
+    "id": 26,
+    "productId": 14,
+    "review": "Expensive but worth it for the features.",
+    "rating": 4.0,
+    "customer": "Xander Young"
+  },
+  {
+    "id": 27,
+    "productId": 15,
+    "review": "Warm and comfortable, perfect for winter.",
+    "rating": 4.0,
+    "customer": "Yara Zane"
+  },
+  {
+    "id": 28,
+    "productId": 15,
+    "review": "Good jacket but runs a bit small.",
+    "rating": 3.5,
+    "customer": "Zachary Allen"
+  },
+  {
+    "id": 29,
+    "productId": 16,
+    "review": "Stylish jacket, love the faux leather.",
+    "rating": 4.5,
+    "customer": "Amy Baker"
+  },
+  {
+    "id": 30,
+    "productId": 16,
+    "review": "Great value for money, very fashionable.",
+    "rating": 4.0,
+    "customer": "Brian Clark"
+  },
+  {
+    "id": 31,
+    "productId": 17,
+    "review": "Nice raincoat, keeps me dry.",
+    "rating": 3.5,
+    "customer": "Cathy Davis"
+  },
+  {
+    "id": 32,
+    "productId": 17,
+    "review": "Good quality but the color is different.",
+    "rating": 3.0,
+    "customer": "David Evans"
+  },
+  {
+    "id": 33,
+    "productId": 18,
+    "review": "Comfortable and fits well.",
+    "rating": 4.0,
+    "customer": "Evelyn Foster"
+  },
+  {
+    "id": 34,
+    "productId": 18,
+    "review": "Soft fabric, very nice for summer.",
+    "rating": 4.5,
+    "customer": "Frank Green"
+  },
+  {
+    "id": 35,
+    "productId": 19,
+    "review": "Lightweight and breathable, great for workouts.",
+    "rating": 4.0,
+    "customer": "Gina Hall"
+  },
+  {
+    "id": 36,
+    "productId": 19,
+    "review": "Good quality but the fit is a bit tight.",
+    "rating": 3.5,
+    "customer": "Henry Irving"
+  },
+  {
+    "id": 37,
+    "productId": 20,
+    "review": "Nice casual shirt, very comfortable.",
+    "rating": 4.5,
+    "customer": "Isla Jenkins"
+  },
+  {
+    "id": 38,
+    "productId": 20,
+    "review": "Good fabric, holds up well after washing.",
+    "rating": 4.0,
+    "customer": "Jack Kelly"
+  }
+]

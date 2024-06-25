@@ -1,8 +1,7 @@
 const Hapi = require('@hapi/hapi');
 const Jwt = require('@hapi/jwt');
 const auth = require('./Auth');
-const productServices = require('./services/product')
-const userServices = require('./services/user')
+const { productServices, userServices, reviewServices } = require('./services')
 const db = require('./DB')
 
 const init = async () => {
@@ -38,6 +37,7 @@ const init = async () => {
     server.auth.default('jwt');
     userServices(server, db)
     productServices(server, db)
+    reviewServices(server, db)
     try {
         await server.start();
         console.log(`Server running at: ${server.info.uri}`);
