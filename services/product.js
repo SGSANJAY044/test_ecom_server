@@ -10,6 +10,21 @@ const productServices = (server, db) => {
 
     server.route({
         method: 'GET',
+        path: '/products/{id}',
+        handler: async (request, h) => {
+            try {
+                const productId = request.params.id
+                const product = await db.any('SELECT * FROM product WHERE id = $1', [productId]);
+                return product[0];
+            } catch (err) {
+                console.error('Error fetching product:', err);
+                return Boom.badRequest('Failed to fetch product');
+            }
+        }
+    });
+
+    server.route({
+        method: 'GET',
         path: '/products',
         handler: async (request, h) => {
             try {
