@@ -10,10 +10,11 @@ const productServices = (server, db) => {
 
     server.route({
         method: 'GET',
-        path: '/products/{id}',
+        path: '/product/{id}',
         handler: async (request, h) => {
             try {
                 const productId = request.params.id
+                console.log(productId);
                 const product = await db.any('SELECT * FROM product WHERE id = $1', [productId]);
                 return product[0];
             } catch (err) {
@@ -28,7 +29,6 @@ const productServices = (server, db) => {
         path: '/products',
         handler: async (request, h) => {
             try {
-                console.log("db");
                 const product = await db.any('SELECT * FROM product');
                 return product;
             } catch (err) {

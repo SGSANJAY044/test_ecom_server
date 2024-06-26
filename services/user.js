@@ -18,7 +18,7 @@ const userServices = (server, db) => {
                 return h.response({ id: res[0].id, email }).code(201);
             } catch (err) {
                 console.error('Error In signup:', err);
-                return Boom.badRequest('Failed to register');
+                return Boom.badRequest(err);
             }
         }
     });
