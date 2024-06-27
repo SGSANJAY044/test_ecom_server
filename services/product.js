@@ -14,9 +14,33 @@ const productServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const productId = request.params.id
-                console.log(productId);
                 const product = await db.any('SELECT * FROM product WHERE id = $1', [productId]);
                 return product[0];
+            } catch (err) {
+                console.error('Error fetching product:', err);
+                return Boom.badRequest('Failed to fetch product');
+            }
+        }
+    });
+
+    server.route({
+        method: 'GET',
+        path: '/products/filter',
+        handler: async (request, h) => {
+            try {
+                const query = request.query;
+                let queryString = "SELECT * FROM product "
+                if (query?.categories) {
+                    queryString += "WHERE category IN ("
+                    queryString += query.categories.split('/').map(category => `'${category.replace(/'/g, "''")}'`).join(',')
+                    queryString += ") "
+                }
+                if (query?.rating) {
+                    queryString += query?.categories ? "AND " : "WHERE "
+                    queryString += `rating <= ${query.rating}`
+                }
+                const product = await db.any(queryString + ";");
+                return product;
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
