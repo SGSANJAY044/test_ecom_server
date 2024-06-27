@@ -50,6 +50,20 @@ const productServices = (server, db) => {
 
     server.route({
         method: 'GET',
+        path: '/products/search',
+        handler: async (request, h) => {
+            try {
+                const product = await db.any(`SELECT * FROM product WHERE title LIKE '${request.query.searchWord}%'`);
+                return product;
+            } catch (err) {
+                console.error('Error fetching product:', err);
+                return Boom.badRequest('Failed to fetch product');
+            }
+        }
+    });
+
+    server.route({
+        method: 'GET',
         path: '/products',
         handler: async (request, h) => {
             try {
