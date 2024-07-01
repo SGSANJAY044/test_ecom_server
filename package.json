@@ -20,9 +20,11 @@
     "@hapi/hapi": "^21.3.10",
     "@hapi/jwt": "^3.2.0",
     "bcryptjs": "^2.4.3",
+    "dotenv": "^16.4.5",
     "hapi-postgres-connection": "^7.0.0",
     "jsonwebtoken": "^9.0.2",
     "pg": "^8.12.0",
-    "pg-promise": "^11.8.0"
+    "pg-promise": "^11.8.0",
+    "web-push": "^3.6.7"
   }
 }

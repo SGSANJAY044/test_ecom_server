@@ -1,6 +1,58 @@
 const bcrypt = require('bcryptjs');
 const auth = require('../Auth')
+const webpush = require('web-push');
+require('dotenv').config()
+
+const apiKeys = {
+    publicKey: process.env.PUBLIC_KEY,
+    privateKey: process.env.PRIVATE_KEY
+}
+
+webpush.setVapidDetails(
+    'mailto:sgsanjay044@gmail.com',
+    apiKeys.publicKey,
+    apiKeys.privateKey
+)
+
+
 const userServices = (server, db) => {
+
+    server.route({
+        method: 'POST',
+        path: '/notification/subscription',
+        handler: async (request, h) => {
+            try {
+                const { email, subscription } = request.payload;
+                console.log(subscription);
+                const res = await db.query(
+                    'INSERT INTO notification (email, subscription) VALUES ($1, $2) RETURNING id', [email, JSON.stringify(subscription)]
+                );
+                return h.response({ id: res[0].id, email, subscription }).code(201);
+            } catch (err) {
+                console.error('Error In subscription:', err);
+                return Boom.badRequest(err);
+            }
+        }
+    });
+
+    server.route({
+        method: 'post',
+        path: '/notification/push',
+        handler: async (request, h) => {
+            try {
+                const { email, message } = request.payload;
+                const res = await db.query(
+                    'SELECT * FROM notification WHERE email = $1', [email]
+                );
+                webpush.sendNotification(JSON.parse(res[0].subscription), message);
+                return h.response({ "statue": "Success", "message": "Message sent to push service" }).code(201);
+            } catch (err) {
+                console.error('Error In subscription:', err);
+                return Boom.badRequest(err);
+            }
+        }
+    });
+
 
     server.route({
         method: 'POST',
