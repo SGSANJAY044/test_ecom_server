@@ -39,8 +39,9 @@ const productServices = (server, db) => {
                     queryString += query?.categories ? "AND " : "WHERE "
                     queryString += `rating <= ${query.rating}`
                 }
-                const product = await db.any(queryString + ";");
-                return product;
+                const totalcount = await db.any('SELECT COUNT(id) FROM product')
+                const product = await db.any(queryString + `LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
+                return { data: product, totalcount: totalcount[0].count };
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
@@ -53,8 +54,9 @@ const productServices = (server, db) => {
         path: '/products/search',
         handler: async (request, h) => {
             try {
-                const product = await db.any(`SELECT * FROM product WHERE title LIKE '${request.query.searchWord}%'`);
-                return product;
+                const totalcount = await db.any('SELECT COUNT(id) FROM product')
+                const product = await db.any(`SELECT * FROM product WHERE title LIKE '%${request.query.searchWord}%' LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
+                return { data: product, totalcount: totalcount[0].count }; 
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
@@ -67,8 +69,9 @@ const productServices = (server, db) => {
         path: '/products',
         handler: async (request, h) => {
             try {
-                const product = await db.any('SELECT * FROM product');
-                return product;
+                const totalcount = await db.any('SELECT COUNT(id) FROM product')
+                const product = await db.any(`SELECT * FROM product LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
+                return { data: product, totalcount: totalcount[0].count };
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
