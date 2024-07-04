@@ -25,11 +25,11 @@ const productServices = (server, db) => {
 
     server.route({
         method: 'GET',
-        path: '/products/filter',
+        path: '/products',
         handler: async (request, h) => {
             try {
                 const query = request.query;
-                let queryString = "SELECT * FROM product "
+                let queryString = ""
                 if (query?.categories) {
                     queryString += "WHERE category IN ("
                     queryString += query.categories.split('/').map(category => `'${category.replace(/'/g, "''")}'`).join(',')
@@ -39,38 +39,12 @@ const productServices = (server, db) => {
                     queryString += query?.categories ? "AND " : "WHERE "
                     queryString += `rating <= ${query.rating}`
                 }
-                const totalcount = await db.any('SELECT COUNT(id) FROM product')
-                const product = await db.any(queryString + `LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
-                return { data: product, totalcount: totalcount[0].count };
-            } catch (err) {
-                console.error('Error fetching product:', err);
-                return Boom.badRequest('Failed to fetch product');
-            }
-        }
-    });
-
-    server.route({
-        method: 'GET',
-        path: '/products/search',
-        handler: async (request, h) => {
-            try {
-                const totalcount = await db.any('SELECT COUNT(id) FROM product')
-                const product = await db.any(`SELECT * FROM product WHERE title LIKE '%${request.query.searchWord}%' LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
-                return { data: product, totalcount: totalcount[0].count }; 
-            } catch (err) {
-                console.error('Error fetching product:', err);
-                return Boom.badRequest('Failed to fetch product');
-            }
-        }
-    });
-
-    server.route({
-        method: 'GET',
-        path: '/products',
-        handler: async (request, h) => {
-            try {
-                const totalcount = await db.any('SELECT COUNT(id) FROM product')
-                const product = await db.any(`SELECT * FROM product LIMIT 10 OFFSET ${(request.query.pageno - 1) * 10}`);
+                if (query?.searchWord) {
+                    queryString += query?.categories || query?.rating ? "AND " : "WHERE "
+                    queryString += `title LIKE '%${request.query.searchWord}%'`
+                }
+                const totalcount = await db.any(`SELECT COUNT(id) FROM product ${queryString}`)
+                const product = await db.any(`SELECT * FROM product ${queryString} LIMIT 10 OFFSET ${(query.pageno - 1) * 10}`);
                 return { data: product, totalcount: totalcount[0].count };
             } catch (err) {
                 console.error('Error fetching product:', err);
