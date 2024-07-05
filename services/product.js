@@ -44,7 +44,7 @@ const productServices = (server, db) => {
                     queryString += `title LIKE '%${request.query.searchWord}%'`
                 }
                 const totalcount = await db.any(`SELECT COUNT(id) FROM product ${queryString}`)
-                const product = await db.any(`SELECT * FROM product ${queryString} LIMIT 10 OFFSET ${(query.pageno - 1) * 10}`);
+                const product = await db.any(`SELECT * FROM product ${queryString} ORDER BY id LIMIT 9 OFFSET ${(query.pageno - 1) * 9}`);
                 return { data: product, totalcount: totalcount[0].count };
             } catch (err) {
                 console.error('Error fetching product:', err);
@@ -52,7 +52,6 @@ const productServices = (server, db) => {
             }
         }
     });
-
 
     server.route({
         method: 'PUT',
