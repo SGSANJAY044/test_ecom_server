@@ -1,4 +1,5 @@
 const Hapi = require('@hapi/hapi');
+const serverless = require('serverless-http');
 const Jwt = require('@hapi/jwt');
 const auth = require('./Auth');
 const { productServices, userServices, reviewServices } = require('./services')
@@ -35,6 +36,13 @@ const init = async () => {
     });
 
     server.auth.default('jwt');
+    server.route({
+        method: 'GET',
+        path: '/.netlify/functions/app',
+        handler: (request, h) => {
+            return 'App is running..';
+        }
+    });
     userServices(server, db)
     productServices(server, db)
     reviewServices(server, db)
@@ -48,3 +56,5 @@ const init = async () => {
 };
 
 init();
+
+module.exports.handler = serverless(init);
