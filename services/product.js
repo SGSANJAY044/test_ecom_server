@@ -3,6 +3,9 @@ const productServices = (server, db) => {
     server.route({
         method: 'GET',
         path: '/',
+        options: {
+            auth: false
+        },
         handler: (request, h) => {
             return 'SparrowMart';
         }
