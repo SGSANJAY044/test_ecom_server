@@ -4,9 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js",
-    "build": "netlify deploy --prod"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
@@ -23,15 +21,10 @@
     "@hapi/jwt": "^3.2.0",
     "bcryptjs": "^2.4.3",
     "dotenv": "^16.4.5",
-    "express": "^4.19.2",
     "hapi-postgres-connection": "^7.0.0",
     "jsonwebtoken": "^9.0.2",
-    "netlify-cli": "^17.33.0",
-    "netlify-lambda": "^2.0.16",
     "pg": "^8.12.0",
     "pg-promise": "^11.8.0",
-    "serverless-http": "^3.2.0",
     "web-push": "^3.6.7"
-  },
-  "keywords": []
+  }
 }
