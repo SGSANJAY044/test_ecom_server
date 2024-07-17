@@ -2,7 +2,7 @@ const jwt = require('jsonwebtoken');
 const db = require('../DB')
 
 const generateToken = (user) => {
-    return jwt.sign({ id: user.id, username: user.username }, 'secret', { expiresIn: '1h' });
+    return jwt.sign({ id: user.id, username: user.username }, 'secret');
 };
 
 const validateToken = async (decoded, request, h) => {
