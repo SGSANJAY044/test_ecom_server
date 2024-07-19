@@ -1,0 +1,11 @@
+{
+
+  "development": {
+    "username": "sanjays",
+    "password": "postgrespassword",
+    "database": "sparrowmartDB",
+    "host": "localhost",
+    "dialect": "postgres",
+    "port": "5432"
+  }
+}

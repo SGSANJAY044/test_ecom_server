@@ -178,5 +178,725 @@
     "category": "women's clothing",
     "image": "https://fakestoreapi.com/img/61pHAEJ4NML._AC_UX679_.jpg",
     "rating": 4.6
+  },
+  {
+    "id": 21,
+    "title": "Men's Casual Slim Fit T-Shirt",
+    "price": 18.99,
+    "description": "Lightweight and comfortable, perfect for everyday wear. Made from a soft cotton blend.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+    "rating": 4.2
+  },
+  {
+    "id": 22,
+    "title": "Men's Regular Fit Cotton Polo",
+    "price": 25.99,
+    "description": "Breathable cotton polo with a classic fit. Ideal for casual or semi-formal occasions.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": 4.0
+  },
+  {
+    "id": 23,
+    "title": "Men's Denim Jeans",
+    "price": 45.99,
+    "description": "Comfortable and durable denim jeans, perfect for everyday wear.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/81XH0e8fefL._AC_UY879_.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": 24,
+    "title": "Women's Casual V-Neck T-Shirt",
+    "price": 15.99,
+    "description": "Soft and breathable V-neck t-shirt, great for casual outings.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71z3kpMAYsL._AC_UY879_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 25,
+    "title": "Women's High Waist Leggings",
+    "price": 20.99,
+    "description": "High waist leggings made from a stretchy fabric. Perfect for workouts or casual wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71HblAHs5xL._AC_UY879_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 26,
+    "title": "Women's Maxi Dress",
+    "price": 29.99,
+    "description": "Elegant maxi dress suitable for both casual and formal occasions.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 27,
+    "title": "Men's Leather Wallet",
+    "price": 35.99,
+    "description": "Classic leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 28,
+    "title": "Men's Stainless Steel Watch",
+    "price": 89.99,
+    "description": "Stylish stainless steel watch with water resistance and a leather band.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 29,
+    "title": "Women's Gold-Plated Necklace",
+    "price": 49.99,
+    "description": "Delicate gold-plated necklace with a minimalist design.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": 30,
+    "title": "Women's Sterling Silver Earrings",
+    "price": 25.99,
+    "description": "Elegant sterling silver earrings, perfect for any occasion.",
+    "category": "jewelery",
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 31,
+    "title": "Smartphone with 128GB Storage",
+    "price": 299.99,
+    "description": "Latest model smartphone with 128GB storage and a high-resolution camera.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61IBBVJvSDL._AC_SY879_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 32,
+    "title": "Bluetooth Noise-Cancelling Headphones",
+    "price": 99.99,
+    "description": "Wireless noise-cancelling headphones with up to 20 hours of battery life.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 33,
+    "title": "4K Ultra HD Smart TV",
+    "price": 499.99,
+    "description": "55-inch 4K Ultra HD Smart TV with HDR support and built-in streaming apps.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 34,
+    "title": "Wireless Bluetooth Speaker",
+    "price": 39.99,
+    "description": "Portable Bluetooth speaker with excellent sound quality and long battery life.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 35,
+    "title": "Men's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "men's shoes",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 36,
+    "title": "Men's Leather Dress Shoes",
+    "price": 79.99,
+    "description": "Classic leather dress shoes with a comfortable fit.",
+    "category": "men's shoes",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 37,
+    "title": "Women's Casual Sneakers",
+    "price": 49.99,
+    "description": "Stylish and comfortable sneakers perfect for casual outings.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 38,
+    "title": "Women's Ankle Boots",
+    "price": 69.99,
+    "description": "Trendy ankle boots with a comfortable fit and stylish design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 39,
+    "title": "Men's Aviator Sunglasses",
+    "price": 19.99,
+    "description": "Classic aviator sunglasses with UV protection.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 40,
+    "title": "Women's Cat-Eye Sunglasses",
+    "price": 15.99,
+    "description": "Stylish cat-eye sunglasses with UV protection.",
+    "category": "women's accessories",
+    "image": "https://fakestoreapi.com/img/61sbMiUnoGL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 41,
+    "title": "Wireless Charging Pad",
+    "price": 29.99,
+    "description": "Fast wireless charging pad compatible with multiple devices.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 42,
+    "title": "Smart Home Security Camera",
+    "price": 79.99,
+    "description": "1080p HD smart home security camera with motion detection and night vision.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    "rating": 4.3
+  },
+  {
+    "id": 43,
+    "title": "Gaming Mouse with RGB Lighting",
+    "price": 25.99,
+    "description": "High-precision gaming mouse with customizable RGB lighting.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/81Zt42ioCgL._AC_SX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 44,
+    "title": "Men's Waterproof Hiking Boots",
+    "price": 89.99,
+    "description": "Durable and waterproof hiking boots designed for all terrains.",
+    "category": "men's shoes",
+    "image": "https://fakestoreapi.com/img/81fPKd-2AYL._AC_SL1500_.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 45,
+    "title": "Men's Casual Leather Belt",
+    "price": 19.99,
+    "description": "Stylish leather belt with a metal buckle, suitable for casual wear.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 46,
+    "title": "Women's Handbag with Multiple Pockets",
+    "price": 45.99,
+    "description": "Spacious handbag with multiple pockets for organized storage.",
+    "category": "women's accessories",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 47,
+    "title": "Wireless Earbuds with Charging Case",
+    "price": 59.99,
+    "description": "True wireless earbuds with a charging case and long battery life.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 48,
+    "title": "Women's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "women's accessories",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 49,
+    "title": "Smart Fitness Tracker",
+    "price": 49.99,
+    "description": "Fitness tracker with heart rate monitor and step counter.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61mtL65D4cL._AC_SX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 50,
+    "title": "Men's Casual Canvas Shoes",
+    "price": 39.99,
+    "description": "Comfortable and stylish canvas shoes perfect for everyday wear.",
+    "category": "men's shoes",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 51,
+    "title": "Women's Summer Sandals",
+    "price": 29.99,
+    "description": "Lightweight and comfortable sandals, perfect for summer.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 52,
+    "title": "Men's Waterproof Digital Watch",
+    "price": 59.99,
+    "description": "Durable digital watch with waterproof design and multiple functions.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 53,
+    "title": "Women's Infinity Scarf",
+    "price": 12.99,
+    "description": "Soft and stylish infinity scarf, perfect for adding a touch of elegance to any outfit.",
+    "category": "women's accessories",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 54,
+    "title": "Bluetooth Car Charger",
+    "price": 19.99,
+    "description": "Dual USB car charger with Bluetooth connectivity and FM transmitter.",
+    "category": "electronics",
+    "image": "https://fakestoreapi.com/img/61U7T1koQqL._AC_SX679_.jpg",
+    "rating": 4.4
+  },
+  {
+    "id": 55,
+    "title": "Men's Lightweight Jacket",
+    "price": 49.99,
+    "description": "Lightweight and breathable jacket, perfect for spring and autumn.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 56,
+    "title": "Women's Winter Coat",
+    "price": 99.99,
+    "description": "Warm and stylish winter coat with a detachable hood.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 57,
+    "title": "Men's Leather Gloves",
+    "price": 24.99,
+    "description": "Soft leather gloves with a warm lining, perfect for winter.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.8
+  },
+  {
+    "id": 58,
+    "title": "Women's Yoga Pants",
+    "price": 29.99,
+    "description": "Comfortable and stretchy yoga pants, perfect for workouts or casual wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71pWzhdJNwL._AC_UL640_QL65_ML3_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 59,
+    "title": "Men's Wool Scarf",
+    "price": 19.99,
+    "description": "Warm and stylish wool scarf, perfect for winter.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 60,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 61,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 62,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 63,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 64,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 65,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 66,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 67,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 68,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 69,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 70,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 71,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 72,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 73,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 74,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 75,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 76,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 77,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 78,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 79,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 80,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 81,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 82,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 83,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 84,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 85,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 86,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 87,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 88,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 89,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 90,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 91,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 92,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 93,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 94,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 95,
+    "title": "Men's Leather Wallet",
+    "price": 29.99,
+    "description": "Elegant leather wallet with multiple card slots and a coin pocket.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 96,
+    "title": "Women's Running Shoes",
+    "price": 59.99,
+    "description": "Lightweight and breathable running shoes with excellent cushioning.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 97,
+    "title": "Men's Casual Shorts",
+    "price": 25.99,
+    "description": "Comfortable and stylish shorts, perfect for summer.",
+    "category": "men's clothing",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.5
+  },
+  {
+    "id": 98,
+    "title": "Women's Leather Boots",
+    "price": 79.99,
+    "description": "Stylish leather boots with a comfortable fit and durable design.",
+    "category": "women's shoes",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.7
+  },
+  {
+    "id": 99,
+    "title": "Men's Sports Watch",
+    "price": 69.99,
+    "description": "Durable sports watch with multiple functions and water resistance.",
+    "category": "men's accessories",
+    "image": "https://fakestoreapi.com/img/71-3HjGNDUL._AC_SY879._SX._UX._SY._UY_.jpg",
+    "rating": 4.6
+  },
+  {
+    "id": 100,
+    "title": "Women's Casual Dress",
+    "price": 39.99,
+    "description": "Comfortable and stylish casual dress, perfect for everyday wear.",
+    "category": "women's clothing",
+    "image": "https://fakestoreapi.com/img/71li-ujtlUL._AC_UX679_.jpg",
+    "rating": 4.5
   }
 ]

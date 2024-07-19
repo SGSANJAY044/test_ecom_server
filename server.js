@@ -7,7 +7,7 @@ const db = require('./DB')
 const init = async () => {
     const server = Hapi.server({
         port: 1810,
-        host: 'localhost',
+        host: '0.0.0.0',
         routes: {
             cors: {
                 origin: ["http://localhost:3000"],

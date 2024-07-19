@@ -5,7 +5,7 @@ const reviewServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const productId = request.params.id
-                const reviews = await db.any('SELECT * FROM reviews WHERE productId = $1', [productId]);
+                const reviews = await db.Review.findAll({ where: { productId: productId } });
                 return reviews;
             } catch (err) {
                 console.error('Error fetching reviews:', err);
@@ -18,7 +18,7 @@ const reviewServices = (server, db) => {
         path: '/reviews',
         handler: async (request, h) => {
             try {
-                const reviews = await db.any('SELECT * FROM reviews');
+                const reviews = await db.Review.findAll({});
                 return reviews;
             } catch (err) {
                 console.error('Error fetching reviews:', err);
@@ -31,12 +31,8 @@ const reviewServices = (server, db) => {
         path: '/reviews',
         handler: async (request, h) => {
             try {
-                let newreviews = []
-                request.payload.map(async (currentreview) => {
-                    const { id, productId, review, rating, customer } = currentreview;
-                    const insertQuery = 'INSERT INTO reviews(id, productId, review, rating, customer) VALUES($1, $2, $3, $4, $5) RETURNING *';
-                    newreviews.push(await db.one(insertQuery, [id, productId, review, rating, customer]));
-                })
+                console.log(request.payload);
+                const newreviews = await db.Review.bulkCreate(request.payload);
                 return newreviews;
             } catch (err) {
                 console.error('Error inserting review:', err);

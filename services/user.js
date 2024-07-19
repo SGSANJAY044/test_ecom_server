@@ -24,10 +24,10 @@ const userServices = (server, db) => {
             try {
                 const { email, subscription } = request.payload;
                 console.log(subscription);
-                const res = await db.query(
-                    'INSERT INTO notification (email, subscription) VALUES ($1, $2) RETURNING id', [email, JSON.stringify(subscription)]
+                const res = await db.Notification.create(
+                    { email: email, subscription: JSON.stringify(subscription) }
                 );
-                return h.response({ id: res[0].id, email, subscription }).code(201);
+                return h.response({ id: res.id, email, subscription }).code(201);
             } catch (err) {
                 console.error('Error In subscription:', err);
                 return Boom.badRequest(err);
@@ -41,9 +41,7 @@ const userServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const { email, message } = request.payload;
-                const res = await db.query(
-                    'SELECT * FROM notification WHERE email = $1', [email]
-                );
+                const res = await db.Notification.findOne({ where: { email: email } })
                 webpush.sendNotification(JSON.parse(res[0].subscription), message);
                 return h.response({ "statue": "Success", "message": "Message sent to push service" }).code(201);
             } catch (err) {
@@ -64,10 +62,14 @@ const userServices = (server, db) => {
             try {
                 const { email, password } = request.payload;
                 const hashedPassword = await bcrypt.hash(password, 10);
-                const res = await db.query(
-                    'INSERT INTO users (email, password) VALUES ($1, $2) RETURNING id', [email, hashedPassword]
-                );
-                return h.response({ id: res[0].id, email }).code(201);
+                const existingUser = await db.User.findOne({ where: { email: email } })
+                if (!existingUser) {
+                    const res = await db.User.create({ email: email, password: hashedPassword })
+                    return h.response({ id: res.id, email }).code(201);
+                }
+                else {
+                    return h.response({ msg: 'User Alreay Exists' }).code(409);
+                }
             } catch (err) {
                 console.error('Error In signup:', err);
                 return Boom.badRequest(err);
@@ -84,11 +86,11 @@ const userServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const { email, password, valid } = request.payload;
-                const res = await db.query('SELECT * FROM users WHERE email = $1', [email]);
-                if (res.length === 0) {
+                const res = await db.User.findOne({ where: { email: email } })
+                if (!res) {
                     return h.response({ message: 'User not found' }).code(404);
                 }
-                const user = res[0];
+                const user = res;
                 const isValid = await bcrypt.compare(password, user.password);
                 if (!isValid && !valid) {
                     return h.response({ message: 'Invalid credentials' }).code(401);

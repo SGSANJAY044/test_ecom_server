@@ -1,11 +1,9 @@
+const { Op } = require('@sequelize/core')
 const productServices = (server, db) => {
 
     server.route({
         method: 'GET',
         path: '/',
-        options: {
-            auth: false
-        },
         handler: (request, h) => {
             return 'SparrowMart';
         }
@@ -17,8 +15,11 @@ const productServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const productId = request.params.id
-                const product = await db.any('SELECT * FROM product WHERE id = $1', [productId]);
-                return product[0];
+                const product = await db.Product.findOne({
+                    where: { id: parseInt(productId) },
+                    rejectOnEmpty: true,
+                });
+                return product;
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
@@ -32,23 +33,44 @@ const productServices = (server, db) => {
         handler: async (request, h) => {
             try {
                 const query = request.query;
-                let queryString = ""
+                let queryObject = {}
                 if (query?.categories) {
-                    queryString += "WHERE category IN ("
-                    queryString += query.categories.split('/').map(category => `'${category.replace(/'/g, "''")}'`).join(',')
-                    queryString += ") "
+                    const categories = query.categories.split('/')
+                    queryObject = {
+                        where: {
+                            category: { in: categories }
+                        }
+                    }
                 }
                 if (query?.rating) {
-                    queryString += query?.categories ? "AND " : "WHERE "
-                    queryString += `rating <= ${query.rating}`
+                    console.log(typeof (parseInt(query.rating)));
+                    queryObject = {
+                        where: {
+                            ...queryObject?.where,
+                            rating: {
+                                lte: parseInt(query.rating)
+                            }
+                        }
+                    }
                 }
                 if (query?.searchWord) {
-                    queryString += query?.categories || query?.rating ? "AND " : "WHERE "
-                    queryString += `title LIKE '%${request.query.searchWord}%'`
+                    queryObject = {
+                        where: {
+                            ...queryObject?.where,
+                            title: {
+                                like: `%${request.query.searchWord}%`
+                            }
+                        }
+                    }
                 }
-                const totalcount = await db.any(`SELECT COUNT(id) FROM product ${queryString}`)
-                const product = await db.any(`SELECT * FROM product ${queryString} ORDER BY id LIMIT ${query?.limit || 10} OFFSET ${query?.offset || (query?.pageno - 1) * 9}`);
-                return { data: product, totalcount: totalcount[0].count };
+                queryObject = {
+                    ...queryObject,
+                    limit: query?.limit || 10,
+                    offset: query?.offset || (query?.pageno - 1) * 9
+                }
+                const product = await db.Product.findAll(queryObject);
+                const totalcount = await db.Product.findAll({});
+                return { data: product, totalcount: totalcount.length };
             } catch (err) {
                 console.error('Error fetching product:', err);
                 return Boom.badRequest('Failed to fetch product');
@@ -61,10 +83,8 @@ const productServices = (server, db) => {
         path: '/product',
         handler: async (request, h) => {
             try {
-                const { id, title, category, description, image, rating, price } = request.payload;
-
-                const insertQuery = 'INSERT INTO product(id,title,category,description,image,rating,price) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *';
-                const newProduct = await db.one(insertQuery, [id, title, category, description, image, rating, price]);
+                console.log(request.payload);
+                const newProduct = await db.Product.create(request.payload);
                 return newProduct;
             } catch (err) {
                 console.error('Error inserting product:', err);
@@ -78,7 +98,7 @@ const productServices = (server, db) => {
         path: '/products',
         handler: async (request, h) => {
             try {
-                await db.any('DELETE FROM product');
+                await db.Product.truncate();
                 return "Success";
             } catch (err) {
                 console.error('Error inserting product:', err);
@@ -92,12 +112,8 @@ const productServices = (server, db) => {
         path: '/products',
         handler: async (request, h) => {
             try {
-                let newProducts = []
-                request.payload.map(async (product) => {
-                    const { id, title, category, description, image, rating, price } = product;
-                    const insertQuery = 'INSERT INTO product(id,title,category,description,image,rating,price) VALUES($1, $2, $3, $4, $5, $6, $7) RETURNING *';
-                    newProducts.push(await db.one(insertQuery, [id, title, category, description, image, rating, price]));
-                })
+                console.log(request.payload);
+                const newProducts = await db.Product.bulkCreate(request.payload);
                 return newProducts;
             } catch (err) {
                 console.error('Error inserting product:', err);

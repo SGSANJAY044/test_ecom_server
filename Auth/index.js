@@ -6,9 +6,10 @@ const generateToken = (user) => {
 };
 
 const validateToken = async (decoded, request, h) => {
-    const res = await db.query('SELECT * FROM users WHERE id = $1', [decoded.id]);
+    console.log(decoded);
+    const res = await db.User.findOne({ where: { id: decoded.decoded.payload.id } });
 
-    if (res.rowCount === 0) {
+    if (!res) {
         return { isValid: false };
     }
 
